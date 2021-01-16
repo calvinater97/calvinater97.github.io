@@ -18,3 +18,15 @@ img {
 header {
     background-color: green;
 }
+main p {
+    font-size: 23px;
+}
+#white_space {
+    text-align: center;
+}
+#contrast {
+    text-align: center;
+}
+#fitts {
+    text-align: center;
+}
