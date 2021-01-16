@@ -1,0 +1,20 @@
+#whole_page {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'Imbue', serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 25px;
+}
+img {
+    width: 325px;
+    height: auto;
+    padding: 20px;
+}
+header {
+    background-color: green;
+}
