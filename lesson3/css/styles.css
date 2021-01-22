@@ -1,0 +1,19 @@
+header {
+    display: grid;
+    grid-template-columns: 75px auto;
+}
+.logo {
+    grid-column: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.top-nav {
+    grid-column: 2;
+    text-align: center;
+    align-self: end;
+}
+.top-nav li {
+    display: inline-block;
+    width: 20%;
+}
