@@ -1,0 +1,47 @@
+#image {
+    position: relative;
+    width: 500px;
+}
+
+.left-arrow {
+    position: absolute;
+    width: 50px;
+    right: 400px;
+    height: 50px;
+    top: 4%;
+}
+.right-arrow {
+    position: absolute;
+    width: 50px;
+    right: -200px;
+    height: 50px;
+    top: 4%;
+}
+.david1 {
+    position: absolute;
+    width: 50px;
+    right: 400px;
+    height: 50px;
+    top: 85%;
+}
+.david2 {
+    position: absolute;
+    width: 50px;
+    right: 237.5px;
+    height: 50px;
+    top: 85%;
+}
+.david3 {
+    position: absolute;
+    width: 50px;
+    right: 63.5px;
+    height: 50px;
+    top: 85%;
+}
+.david4 {
+    position: absolute;
+    width: 50px;
+    right: -100px;
+    height: 50px;
+    top: 85%;
+}
