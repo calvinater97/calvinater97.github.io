@@ -1,0 +1,55 @@
+@media only screen and (min-width:34.5em) {
+    nav {
+        max-width: 100%;
+    }
+    #navigation {
+        grid-template-columns: repeat(7,auto);
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+        text-align: center;
+    }
+    #navigation li:first-child {
+        display: none;
+    }
+    #navigation a:hover {
+        color: white;
+        background-color: black;
+    }
+    .border {
+        border-top: none;
+    }
+    header div {
+        margin-right: 75px;
+    }
+    main {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    #contractInfo {
+        display: grid;
+        grid-template-columns: 50%;
+    }
+    .contact-right {
+        grid-column: -1;
+        grid-row: 1/-1;
+    }
+    .contact-left {
+        grid-column: 1;
+        grid-row: 1/-1;
+    }
+    .hero {
+        position: relative;
+    }   
+    .weatherSummary {
+        position: absolute;
+        width: 175px;
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        top: 245px;
+        margin-left: 40px;
+        padding: 8px;
+    }
+}
