@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston, Idaho</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="banner">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <img class="logo" src="images/weather-planning.png" alt="weather-logo" />
+        <div>
+            <h1>
+                Weather-Planning
+            </h1>
+            <p>
+                Never miss out on an opportunity to party!
+            </p>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a href="#" class="border">Home</a></li>
+            <li><a href="preston-7.html" class="border">Preston</a></li>
+            <li><a href="#" class="border">Soda Springs</a></li>
+            <li><a href="#" class="border">Fish Haven</a></li>
+            <li><a href="#" class="border">Storm Center</a></li>
+            <li><a href="#" class="border" id="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="gallery">
+        <h1>Weather Gallery</h1>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=983&q=80"><p>Lightning strike during overcast day</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"><p>Lightning lighting the sky up</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"><p>Partly cloudy day</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1564639580159-74150c717f25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"><p>Overcast foggy day</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1578086591939-f3e05b7dbfdd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80"><p>Sunny day</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1594613583881-fa9da07cafa2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80"><p>Foggy day</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1591804227855-d6fe0b648d0e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=922&q=80"><p>Partly cloudy</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1606170034961-ee40e2dbe6bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"><p>Sunny and partly cloudy</p></div>
+        <div class="gallery-div"><img loading='lazy' alt="" src="https://images.unsplash.com/photo-1441920007991-ae5ddfade6d1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"><p>Overcast day</p></div>
+       
+    </main>
+    <footer>
+        <p class="legal">&copy; <span id="copyrightyear"></span> | The Weather Site | WDD-230 | Calvin Wood</p>
+        <div id="date" class="container"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: [
+                    'Arial',
+                    'Helvetica',
+                    'Roboto'
+                    ]
+                }
+            }); 
+        </script>
+</body>
+
+</html>
