@@ -167,7 +167,7 @@ form legend {
     padding: 0 .5rem;
     text-align: left;
 }
-form label.top, #comments, #storm-type, .ss, .radio {
+form label.top, #comments, #storm-type, .ss, .radio, .danger {
     display: block;
     padding-top: 1rem;
     color: black;
@@ -205,6 +205,9 @@ form input.submitBtn {
     margin-top: 2px;
     display: block;
 }
-#severity {
+#storm-severity {
     display: block;
+}
+.danger {
+    margin-bottom: -10px;
 }

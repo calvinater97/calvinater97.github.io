@@ -71,7 +71,7 @@
                 </datalist>
 
                 <label class="ss" for="storm-severity">Storm Severity:
-                    <input type="range" id="severity" name="storm-severity" value="5" min="1" max="10" step="1"
+                    <input type="range" id="storm-severity" name="storm-severity" value="5" min="1" max="10" step="1"
                         list="tickmarks" oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
                     <span id="rangevalue">5</span> </label>
                 <datalist id="tickmarks">
@@ -97,9 +97,7 @@
                     </select>
                 </label>
 
-                <label class="top">
-                    <div>Are you in danger? </div>
-                </label>
+                <div class="danger">Are you in danger? </div>
                 <label class="radio"><input type="radio" name="danger" value="danger"> Yes</label>
                 <label class="radio"><input type="radio" name="danger" value="danger"> Maybe</label>
                 <label class="radio"><input type="radio" name="danger" value="danger"> No</label>
