@@ -29,4 +29,10 @@ window.addEventListener('load', ()=>{
     } else {
         parkfood.classList.remove("nobanner");
     }
+
 })
+
+//Adjusts the rating in the form.
+function adjustRange(severity) {
+    document.getElementById("rangevalue").innerHTML = severity;
+}

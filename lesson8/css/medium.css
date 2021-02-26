@@ -61,4 +61,13 @@
     .gallery h1 {
         grid-column: span 2;
     }
+
+    /*Stormcenter*/
+
+    form fieldset {
+        width: 100%;
+    }
+    form label.top input {
+        width: 100%;
+    }
 }
