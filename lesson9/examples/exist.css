@@ -1,0 +1,27 @@
+p {
+    margin: 0 auto;
+    padding: 10px;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+section {
+    display: inline-block;
+    border: solid 2px black;
+    margin: .2em;
+    text-align: center;
+    background-color:#003f917e;
+    padding-bottom: 2em;
+    border-radius: 25px;
+    width: 350px;
+}
+img {
+    width: 50%;
+    box-shadow: 0 0 10px black;
+    margin-top: 3em;
+}
+header {
+    text-align: center;
+}

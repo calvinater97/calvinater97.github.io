@@ -1,0 +1,67 @@
+@media only screen and (min-width:54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+
+    #navigation a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .border {
+        border-top: none;
+    }
+
+    header div {
+        margin-right: 75px;
+    }
+
+    /*Gallery*/
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery h1 {
+        grid-column: span 3;
+    }
+
+    .gallery-div:hover {
+        box-shadow: 4px 4px 4px black;
+    }
+
+    /*Index Page*/
+
+    .towns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* display: flex; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+    }
+
+    .towns section {
+        flex: 0 32%;
+        height: 100%;
+        margin-bottom: 2%;
+        display: block;
+        /* display: block; */
+    }
+
+    /* .towns section div {
+        order: 1;
+    }
+
+    .towns section img {
+        order: 2;
+    } */
+
+    .towns section:nth-child(odd) img {
+        grid-column: unset;
+    }
+    .towns section:nth-child(odd) div {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}
