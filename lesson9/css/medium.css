@@ -73,7 +73,26 @@
 
     /*Index Page*/
 
-    .towns section {
+    .towns section .data .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .towns section .data .card img{
+        margin-top: 20px;
+    }
+    .towns section .data .card:nth-child(odd) img {
+        grid-column: 1;
+    }
+    .towns section .data .card:nth-child(odd) div {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+
+    /* .towns section .data{
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
@@ -89,5 +108,5 @@
     }
     .towns section img {
         margin-top: 10%;
-    }
+    } */
 }

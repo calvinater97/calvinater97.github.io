@@ -218,7 +218,7 @@ form input.submitBtn {
     display: grid;
     grid-template-columns: auto;
 }
-.towns section {
+.towns section .data .card{
     border: 1px solid black;
     background-color: #b4a3a3;
     border: solid 2px black;

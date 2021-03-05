@@ -33,34 +33,19 @@
 
     /*Index Page*/
 
-    .towns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        /* display: flex; */
-        /* grid-template-columns: 1fr 1fr 1fr; */
+    .towns section .data{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
     }
-
-    .towns section {
-        flex: 0 32%;
-        height: 100%;
-        margin-bottom: 2%;
+    .towns section .data .card{
         display: block;
-        /* display: block; */
+        padding: 5px;
     }
-
-    /* .towns section div {
-        order: 1;
-    }
-
-    .towns section img {
-        order: 2;
-    } */
-
-    .towns section:nth-child(odd) img {
+    .towns section .data .card:nth-child(odd) img {
         grid-column: unset;
     }
-    .towns section:nth-child(odd) div {
+    .towns section .data .card:nth-child(odd) div {
         grid-column: unset;
         grid-row: unset;
     }
