@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+#temples{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.temple{
+    border: 1px solid white;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: #8C92AC;
+}
+.temple img {
+    width: 100%;
+}

@@ -1,0 +1,52 @@
+@media only screen and (min-width:54.5em) {
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+
+    #navigation a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .border {
+        border-top: none;
+    }
+
+    header div {
+        margin-right: 75px;
+    }
+
+    /*Gallery*/
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery h1 {
+        grid-column: span 3;
+    }
+
+    .gallery-div:hover {
+        box-shadow: 4px 4px 4px black;
+    }
+
+    /*Index Page*/
+
+    .towns section .data{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+    .towns section .data .card{
+        display: block;
+        padding: 5px;
+    }
+    .towns section .data .card:nth-child(odd) img {
+        grid-column: unset;
+    }
+    .towns section .data .card:nth-child(odd) div {
+        grid-column: unset;
+        grid-row: unset;
+    }
+}

@@ -1,0 +1,234 @@
+#banner p{
+    text-align: center;
+    padding: 1px;
+}
+.nobanner {
+    display: none;
+}
+header {
+    display: grid;
+    grid-template-columns: 75px auto;
+    background-color: #68B0AB;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.logo {
+    width: 75px;
+    height: auto;
+}
+body {
+    background-color: #8F8F8F;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    text-align: center;
+}
+.logo {
+    grid-column: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+    padding-left: 5px;
+}
+header p {
+    margin-top: -18px;
+    font-size: small;
+}
+header div {
+    text-align: center;
+}
+header div h1 {
+    font-size: 1.8em;
+}
+#navigation #active{
+    background-color: black;
+    color: white;
+}
+h1, h2 {
+    font-family: 'Fraunces', serif;
+}
+.topics {
+    padding: 1px;
+    background-color: #68B0AB; 
+    margin: 10px;
+}
+.hero {
+    width: 100%;
+    height: auto;
+}
+#forcast {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#forcast h2 {
+    grid-row: 1;
+    grid-column: 1/6;
+}
+#forcast div {
+    grid-row: 2;
+    border: thin solid black;
+    background-color: #87C0BC;
+}
+.embeddedMap {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #68B0AB;
+}
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+}
+#navigation li:first-child {
+    display: block;
+}
+#navigation li {
+    display: none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#navigation.responsive li {
+    display: block;
+}
+.border {
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #68B0AB;
+    color: black;
+    padding: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+    color: black;
+}
+footer a:hover {
+    color: #DDD;
+}
+footer {
+    clear: both;
+    text-align: center;
+}
+footer p.legal {
+    font-size: .9em;
+}
+.container {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+
+/*Gallery Page*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.gallery .gallery-div {
+    border: 2px solid black;
+    width: 97%;
+    margin-bottom: 5px;
+}
+.gallery img {
+    width: 95%;
+    height: 250px;
+}
+
+/*Stormcenter page*/
+
+form fieldset {
+    margin: 2rem auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    width: 90%;
+}
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    text-align: left;
+}
+form label.top, #comments, #storm-type, .ss, .radio, .danger {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .8rem;
+    text-align: left;
+}
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .09);
+    width: 90%;
+}
+form input.submitBtn {
+    float: left;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 50%;
+    max-width: 20rem;
+}
+#storm-type {
+    border: none;
+}
+#storm-region {
+    margin-top: 2px;
+    display: block;
+}
+#storm-severity {
+    display: block;
+}
+.danger {
+    margin-bottom: -10px;
+}
+
+/*Index Page*/
+
+.towns {
+    display: grid;
+    grid-template-columns: auto;
+}
+.towns section .data .card{
+    border: 1px solid black;
+    background-color: #b4a3a3;
+    border: solid 2px black;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2em;
+    border-radius: 25px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+.towns section img {
+    width:75%;
+}
