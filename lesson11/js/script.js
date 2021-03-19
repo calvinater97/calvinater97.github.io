@@ -66,11 +66,11 @@ fetch(requestURL)
         let p_rain = document.createElement('p');
         let p_image = document.createElement('img');
 
-        p_name.textContent = towns[5].name;
-        p_motto.textContent = towns[5].motto;
-        p_founded.textContent = "Year Founded: " + towns[5].yearFounded;
-        p_pop.textContent = "Population: " + towns[5].currentPopulation;
-        p_rain.textContent = "Average Rainfall: " + towns[5].averageRainfall;
+        p_name.textContent = towns[6].name;
+        p_motto.textContent = towns[6].motto;
+        p_founded.textContent = "Year Founded: " + towns[6].yearFounded;
+        p_pop.textContent = "Population: " + towns[6].currentPopulation;
+        p_rain.textContent = "Average Rainfall: " + towns[6].averageRainfall;
         p_image.setAttribute('src', 'images/preston.jpg');
 
         p_elements.appendChild(p_name);
@@ -94,11 +94,11 @@ fetch(requestURL)
         let s_rain = document.createElement('p');
         let s_image = document.createElement('img');
 
-        s_name.textContent = towns[6].name;
-        s_motto.textContent = towns[6].motto;
-        s_founded.textContent = "Year Founded: " + towns[6].yearFounded;
-        s_pop.textContent = "Population: " + towns[6].currentPopulation;
-        s_rain.textContent = "Average Rainfall: " + towns[6].averageRainfall;
+        s_name.textContent = towns[0].name;
+        s_motto.textContent = towns[0].motto;
+        s_founded.textContent = "Year Founded: " + towns[0].yearFounded;
+        s_pop.textContent = "Population: " + towns[0].currentPopulation;
+        s_rain.textContent = "Average Rainfall: " + towns[0].averageRainfall;
         s_image.setAttribute('src', 'images/soda.jpg');
 
         s_elements.appendChild(s_name);
@@ -122,11 +122,11 @@ fetch(requestURL)
         let f_rain = document.createElement('p');
         let f_image = document.createElement('img');
 
-        f_name.textContent = towns[1].name;
-        f_motto.textContent = towns[1].motto;
-        f_founded.textContent = "Year Founded: " + towns[1].yearFounded;
-        f_pop.textContent = "Population: " + towns[1].currentPopulation;
-        f_rain.textContent = "Average Rainfall: " + towns[1].averageRainfall;
+        f_name.textContent = towns[2].name;
+        f_motto.textContent = towns[2].motto;
+        f_founded.textContent = "Year Founded: " + towns[2].yearFounded;
+        f_pop.textContent = "Population: " + towns[2].currentPopulation;
+        f_rain.textContent = "Average Rainfall: " + towns[2].averageRainfall;
         f_image.setAttribute('src', 'images/fish.jpg');
 
         f_elements.appendChild(f_name);
@@ -143,7 +143,7 @@ fetch(requestURL)
         document.querySelector('div.towns').appendChild(town);
     });
 
-//API
+//API - Preston
 
 const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
 fetch(apiURL)
@@ -188,4 +188,6 @@ fetch(apiURL)
         document.getElementById('fifthImg').setAttribute('src', day5Img);
         document.getElementById('fifthTemp').textContent = ~~jsObject.list[38].main.temp;
 
+
+      
     });
