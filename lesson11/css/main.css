@@ -54,6 +54,13 @@ h1, h2 {
     background-color: #68B0AB; 
     margin: 10px;
 }
+#article{
+    text-align: left;
+    padding: 5px;
+}
+#article h3, #article div{
+    text-align: center;
+}
 .hero {
     width: 100%;
     height: auto;

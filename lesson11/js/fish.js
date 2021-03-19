@@ -46,3 +46,26 @@ fetch(apiURL)
 
       
     });
+
+    //Events
+
+const requestURLa = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURLa)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const towns = jsonObject['towns'];
+        for (var i = 0; i < towns[2].events.length; i++){
+            let box = document.createElement("div");
+            let event = document.createElement("p");
+        
+            event.textContent = towns[2].events[i];
+        
+            box.appendChild(event);
+        
+            document.querySelector('#events').appendChild(box);
+
+
+}});

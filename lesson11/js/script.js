@@ -140,8 +140,32 @@ fetch(requestURL)
 
         town.appendChild(data);
 
-        document.querySelector('div.towns').appendChild(town);
+        document.querySelector('.towns').appendChild(town);
+
     });
+
+//Events
+
+const requestURLa = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURLa)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const towns = jsonObject['towns'];
+        for (var i = 0; i < towns[6].events.length; i++){
+            let box = document.createElement("div");
+            let event = document.createElement("p");
+        
+            event.textContent = towns[6].events[i];
+        
+            box.appendChild(event);
+        
+            document.querySelector('#events').appendChild(box);
+
+
+}});
 
 //API - Preston
 

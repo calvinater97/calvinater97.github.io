@@ -9,9 +9,10 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
+    <!-- <script src="js/preston.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/windchill.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
@@ -68,37 +69,81 @@
             <h2>5 Day's Forcast</h2>
             <div>
                 <p id="firstDay"></p>
-                <img id = "firstImg">
+                <img id="firstImg">
                 <p id="firstTemp"></p>
             </div>
             <div>
                 <p id="secondDay"></p>
-                <img id = "secondImg">
+                <img id="secondImg">
                 <p id="secondTemp"></p>
             </div>
             <div>
                 <p id="thirdDay"></p>
-                <img id = "thirdImg">
+                <img id="thirdImg">
                 <p id="thirdTemp"></p>
             </div>
             <div>
                 <p id="fourthDay"></p>
-                <img id = "fourthImg">
+                <img id="fourthImg">
                 <p id="fourthTemp"></p>
             </div>
             <div>
                 <p id="fifthDay"></p>
-                <img id = "fifthImg">
+                <img id="fifthImg">
                 <p id="fifthTemp"></p>
             </div>
         </section>
-        <section class="topics">
-            <h2>Article Title</h2>
+        <section class="topics" id="article">
+            <h2>Preston is a vacationer’s dream. There’s always something to do.</h2>
             <p>
-                orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                Winter brings the best snow and the most beautiful winter scenery. Snowmobiling and cross country skiing
+                is great. You can travel down Mink Creek, Cub River, and even Logan Canyon and see the most beautiful
+                winter wonderland ever, ending up at Bloomington or Bear Lake.<br><br>
+
+                Spring brings golfing at our 18-hole course, floating and kayaking down the beautiful Bear River, as
+                well as fishing, boating, water-skiing or just camping at our 10 reservoirs. There are three swimming
+                resorts close by and also a new swimming pool in town.<br>
+
+                <li>Oneida Narrows Reservoir – 15 miles NE of Preston on SH 36 – wetland & juniper; Trumpeter Swan in
+                winter, Wild Turkey, Eagle, Osprey</li><br>
+                <li>Glendale Reservoir – 3 miles NE of Preston on Hwy 36 – Camping, Restrooms</li><br>
+                <li>Downata – 3 1/2 miles SE of Downey on Hwy 91 – Pelicans, ponds & wetland</li><br>
+                <li>Swan Lake Marsh – 17 miles NW of Preston on SH 91 – wetlands</li><br>
+                <li>Oxford Slough Area – 1 mile N of Oxford on County Rd D-1 – wetland</li><br>
+                <li>Twin Lakes – 4 miles W SH 91 Twin Lakes Rd – wetlands; Loons in spring</li><br>
+                <li>Weston Reservoir – 13 miles E of I-15 Weston Exit SH 36 – farmland</li><br><br>
+                <strong>Water Recreation</strong><br><br>
+
+                <li>Cub River offers some great fly fishing. Most of the fish are cutthroat trout with some hatchery rainbow
+                this is a catch and release area. Located between Preston and Franklin city turn on Cub River Road from
+                Hwy 91.</li><br>
+                <li>Foster Reservoir: Rainbow trout, perch, bluegill, crappie and largemouth bass. Should be good for trout
+                and fair for perch and bluegill. One mile north of Preston off SH 34 onto East Glendale Road.</li><br>
+                <li>Johnson Reservoir: Rainbow trout, bluegill, largemouth bass. Good fishing for rainbow trout; fair for
+                bluegill. Located 3 miles east of Preston on Oneida Road, just past Lamont Reservoir.</li><br>
+                <li>Lamont Reservoir: Rainbow trout, bluegill, perch, largemouth bass. Fair fishing for bluegill, perch and
+                rainbow trout. Located 3 miles east of Preston on Oneida Road.</li><br>
+                <li>Oneida Reservoir: is used to generate electricity, it is open to the public for boating, fishing,
+                swimming etc. There are 2 boat ramps, and camping available as well as a day use picnic area. Fish who
+                call the reservoir home include smallmouth bass, walleye, and occasional trout. Below the dam another 6
+                miles of Bear River provide great trout fishing in the beautiful Oneida Narrows. Drive from Grace or
+                Preston on Highway 34 to the intersection with Highway 36, 5 miles north of Preston. Turn onto Highway
+                36 and drive east 3 miles (almost to the Bear River), turn north on the Oneida Narrows Road and drive 6
+                miles to Oneida Reservoir.</li><br>
+                <li>Treasureton Reservoir: Rainbow trout: This reservoir is managed for quality size trout. Located near
+                SH34, 11 miles north of Preston.</li><br>
+                <li>Condie Reservoir: Bluegill, perch and largemouth bass. Access from SH 34, 8 miles north of Preston.</li><br>
+                <li>Twin Lakes Reservoir: hosts largemouth bass, perch, rainbow trout and bluegills; Popular for water
+                skiing and camping as well as fishing. Day use of this reservoir is only $5 per vehicle and an
+                additional $3 fee to stay overnight. Access from Twin Lakes Road off SH91 north of Preston. Call
+                208-852-3731 for more info.</li><br>
+
+                https://idahohighcountry.org/cat/snowmobile-trails/<br>
+
+                https://trails.idaho.gov/
             </p>
+            <h3>Upcoming Events</h3>
+            <div id="events"></div>
         </section>
         <section class="topics" id="contractInfo">
             <div class="contact-right">
@@ -127,17 +172,17 @@
         <div id="date" class="container"></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script>
-            WebFont.load({
-                google: {
-                    families: [
+    <script>
+        WebFont.load({
+            google: {
+                families: [
                     'Arial',
                     'Helvetica',
                     'Roboto'
-                    ]
-                }
-            }); 
-        </script>
+                ]
+            }
+        });
+    </script>
 </body>
 
 </html>
