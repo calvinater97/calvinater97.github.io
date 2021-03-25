@@ -94,11 +94,18 @@ body{
 @media only screen and (min-width: 32.5em) {
     .checkout{
         display: grid;
-        grid-template-columns: auto auto;
-        width: 50%;
+        grid-template-columns: 1fr 1fr;
+        width: 60%;
         margin: 0 auto;
     }
     body{
         background-image: url("/images/background.png");
+    }
+    .payment img{
+        width: 100px;
+        margin-left: 60%;
+    }
+    .customer{
+        width: 75%;
     }
 }
