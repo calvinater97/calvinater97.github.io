@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn and Suites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Inn and Suites</h1>
+        <img src="images/templelogol.png" alt="Temple Inn and Suites Logo">
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a href="index.html" class="border">Home</a></li>
+            <li><a href="temples.html" class="border">Temples</a></li>
+            <li><a href="#" class="border" id="active">Reservation</a></li>
+            <li><a href="#" class="border">Services</a></li>
+            <li><a href="#" class="border">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <picture class="mainImage">
+            <source media="(min-width:54.5em)" srcset="images/largemainimage.jpeg">
+            <source media="(min-width:34.5em)" srcset="images/mediummainimage.jpeg">
+            <source media="(min-width:14.5em)" srcset="images/smallmainimage.jpeg">
+            <img src="images/largemainimage.jpeg" alt="temple image">
+        </picture>
+
+        <h1>Make your Reservation Today!</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">Full Name* <input type="text" name="fname" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">State* <input type="text" name="state" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Stay Detail's</legend>
+                <label class="top">Hotel Location* <input type="text" name="location" required></label>
+                <label class="top">Date Visiting* <input type="date" name="dateVisit"></label>
+
+                <label class="top">Number of Rooms* <input type="text" name="rooms" required></label>
+                <div>Rooms Available</div>
+                <label class="block"><input type="checkbox" name="audience" value="beginner"> 1 King</label>
+                <label class="block"><input type="checkbox" name="audience" value="beginner"> 2 Kings</label>
+                <label class="block"><input type="checkbox" name="audience" value="beginner"> 1 Queen</label>
+                <label class="block"><input type="checkbox" name="audience" value="beginner"> 2 Queens</label>
+                <label class="block"><input type="checkbox" name="audience" value="beginner"> 2 Twins</label>
+                <label class="block"><input type="checkbox" name="audience" value="beginner"> 3 Twins</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">Comments <input type="text" name="com"></label>
+            </fieldset>
+
+            <input type="submit" value="Complete my Reservation" class="submitBtn">
+
+        </form>
+
+    </main>
+    <footer>
+        <img src="images/templelogol.png" alt="Temple Inn and Suites Logo">
+        <p>Contact us at: <br><br>(410)346-4842</p>
+        <a href="https://www.facebook.com"><img src="images/facebook.png"></a>
+        <a href="https://www.instagram.com"><img src="images/instagram.png"></a>
+    </footer>
+</body>
+
+</html>
