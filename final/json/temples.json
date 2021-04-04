@@ -14,7 +14,8 @@
         "services":"Clothing rental available, Distribution center nearby",
         "history":"Announced-March 3rd 1937, Groundbreaking-Dec. 19th 1939, Dedicated-Sept. 23rd 1945, Rededicated-June 4th 2017",
         "closed":"Saturday, 3 April 2021, Monday, 28 June 2021 - Monday, 12 July 2021, Saturday, 2 October 2021, Wednesday, 24 November 2021 (Limited Operations), Thursday, 25 November 2021\nFriday, 24 December 2021 - Saturday, 25 December 2021, Friday, 31 December 2021 (Limited Operations), Saturday, 1 January 2022",
-        "schedule":"Due to Covid you need to make your appointment ahead of time"
+        "schedule":"Due to Covid you need to make your appointment ahead of time",
+        "email":"temple@churchofjesuschrist.org"
     },
 
     {
@@ -32,7 +33,8 @@
         "services":"Clothing rental available, Distribution center nearby",
         "history":"Announced-Dec. 12th 2003, Groundbreaking-July 30th 2005, Dedicated-Feb. 10th 2008",
         "closed":"Saturday, 3 April 2021, Monday, 12 April 2021 - Monday, 26 April 2021, Saturday, 24 July 2021, Monday, 23 August 2021 - Monday, 13 September 2021, Saturday, 2 October 2021, Wednesday, 24 November 2021 - Thursday, 25 November 2021, Friday, 24 December 2021 - Saturday, 25 December 2021, Friday, 31 December 2021 - Saturday, 1 January 2022",
-        "schedule":"Due to Covid you need to make your appointment ahead of time"
+        "schedule":"Due to Covid you need to make your appointment ahead of time",
+        "email":"temple@churchofjesuschrist.org"
     } ,   
     {
         "name":"Kansas City Missouri Temple",
@@ -49,7 +51,8 @@
         "services":"Clothing rental available",
         "history":"Announced-Oct. 4th 2008, Groundbreaking-May 8th 2010, Dedicated-May 6th 2012",
         "closed":"Saturday, 3 April 2021, Monday, 12 July 2021 - Monday, 23 August 2021, Saturday, 2 October 2021, Thursday, 25 November 2021, Friday, 24 December 2021 - Saturday, 25 December 2021, Friday, 31 December 2021 (Limited Operations)",
-        "schedule":"Due to Covid you need to make your appointment ahead of time"
+        "schedule":"Due to Covid you need to make your appointment ahead of time",
+        "email":"temple@churchofjesuschrist.org"
     },
     {
         "name":"Oklahoma City Oklahoma Temple",
@@ -66,6 +69,7 @@
         "services":"None",
         "history":"Announced-March 14th 1999, Groundbreaking-July 3rd 1999, Dedicated-July 30th 2000, Rededicated-May 19th 2019",
         "closed":"Saturday, 3 April 2021 - Monday, 5 April 2021, Saturday, 2 October 2021 - Monday, 4 October 2021, Monday, 6 December 2021 - Monday, 20 December 2021",
-        "schedule":"Due to Covid you need to make your appointment ahead of time"
+        "schedule":"Due to Covid you need to make your appointment ahead of time",
+        "email":"temple@churchofjesuschrist.org"
     } 
 ]

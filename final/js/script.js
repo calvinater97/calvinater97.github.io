@@ -29,7 +29,7 @@ function buildTempleCard(temple, temp) {
                      <img src="${temple.imageurl}" alt="${temple.name}">
                      <p>Address: <b>${temple.address}</b></p>
                      <p>Phone: <b>${temple.phone}</b></p>
-                     <p>Email: <b>${temple.phone}</b></p>
+                     <p>Email: <b>${temple.email}</b></p>
                      <p>Servies: <b>${temple.services}</b></p>
                      <p>History: <b>${temple.history}</b></p>
                      <p>Schedule: <b>${temple.schedule}</b></p>

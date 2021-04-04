@@ -1,0 +1,24 @@
+@media only screen and (min-width:54.5em) {
+    body{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .lastpic img{
+        width: 100%;
+    }
+    .mainImage{
+        margin: 0 auto;
+    }
+
+    /* Reception */
+
+    .food{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Missionary */
+
+    .gridSuites{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

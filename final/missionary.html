@@ -29,7 +29,7 @@
             <li><a href="index.html" class="border">Home</a></li>
             <li><a href="temples.html" class="border">Temples</a></li>
             <li><a href="reservation.html" class="border">Reservation</a></li>
-            <li><a href="servies.html" class="border">Services</a></li>
+            <li><a href="servies.html" class="border" id="active">Services</a></li>
             <li><a href="contact.html" class="border">Contact Us</a></li>
         </ul>
     </nav>
@@ -40,9 +40,48 @@
             <source media="(min-width:14.5em)" srcset="images/smallmainimage.jpeg">
             <img src="images/largemainimage.jpeg" alt="temple image">
         </picture>
-        <section>
-            <p>Your reservation is now complete.  Thank you and were excited to have you stay with us.</p>
+        <section class="mainTopics">
+            <h2>Suites Offered</h2>
+            <div class="gridSuites">
+                <div class="suites">
+                    <h3>King Room</h3>
+                    <img src="https://d31f902anbz5po.cloudfront.net/2116/283737_3_master.jpg" alt="king room"
+                        width="100%">
+                    <ul>
+                        <li>Free Wifi</li>
+                        <li>Great views from balcony</li>
+                    </ul>
+                </div>
+                <div class="suites">
+                    <h3>Queen Room</h3>
+                    <img src="https://thehotelzamora.com/wp-content/uploads/2018/05/Queen-Queen-Premier-copy-1-1500x712.jpg"
+                        alt="queen room" width="100%">
+                    <ul>
+                        <li>Free Wifi</li>
+                        <li>Suitable for multiple guests</li>
+                    </ul>
+                </div>
+                <div class="suites">
+                    <h3>Twin Room</h3>
+                    <img src="https://s7d2.scene7.com/is/image/ritzcarlton/50555374-The%20Ritz-Carlton,%20Berlin_Deluxe%20Room%20Twin_Foto%20Matthew%20Shaw?$XlargeViewport100pct$"
+                        alt="twin room" width="100%">
+                    <ul>
+                        <li>Free Wifi</li>
+                        <li>Safe environment for the kids</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label class="top">Full Name <input type="text" name="fname"></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Message <input type="text" name="mess"></label>
+            </fieldset>
+            <input type="submit" value="Send" class="submitBtn">
+        </form>
+
     </main>
     <footer>
         <img src="images/templelogol.png" alt="Temple Inn and Suites Logo">

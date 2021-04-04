@@ -166,3 +166,27 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
+
+/* Servies */
+
+.sub{
+    text-align: center;
+}
+
+/* Reception */
+
+.reception p{
+    margin-left: 5px;
+}
+
+/* Missionary */
+
+.suites{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: #fffaef;
+}
+.suites h3{
+    margin: 0;
+    padding: 15px;
+}
