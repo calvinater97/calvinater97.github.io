@@ -38,7 +38,7 @@ function buildTempleCard(temple) {
 
 }
 //Idaho Falls
-const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5596475&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5596475&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -53,7 +53,7 @@ fetch(apiURL)
     });
 
 //Rexburg
-const apiURL1 = "http://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+const apiURL1 = "https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
 fetch(apiURL1)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -68,7 +68,7 @@ fetch(apiURL1)
     });
 
 //Kansas City
-const apiURL2 = "http://api.openweathermap.org/data/2.5/forecast?id=4393217&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=4393217&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
 fetch(apiURL2)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -83,7 +83,7 @@ fetch(apiURL2)
     });
 
 //Oklahoma City
-const apiURL3 = "http://api.openweathermap.org/data/2.5/forecast?id=4544349&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+const apiURL3 = "https://api.openweathermap.org/data/2.5/forecast?id=4544349&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
 fetch(apiURL3)
     .then((response) => response.json())
     .then((jsObject) => {
