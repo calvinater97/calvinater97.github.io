@@ -93,6 +93,9 @@ footer p{
 footer a, footer img{
     align-self: center;
 }
+.resButton{
+    grid-column: 1/-1;
+}
 
 /* Temples page */
 
