@@ -117,6 +117,16 @@ footer a, footer img{
 .temple img {
     width: 100%;
 }
+#tem{
+    text-align: center;
+    border: 1px solid #a6a6a6;
+    width: 95%;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    background-color: #fffaef;
+    margin-top: 15px;
+}
 
 
 /* Reservation */

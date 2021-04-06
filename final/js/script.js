@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
 })
 
 
-function buildTempleCard(temple, temp) {
+function buildTempleCard(temple) {
     console.log(temple);
 
     let card = document.createElement("section");
@@ -37,19 +37,62 @@ function buildTempleCard(temple, temp) {
     document.querySelector("#temples").appendChild(card);
 
 }
-//COME BACK TO THIS SECTION TO GET THE WEATHER WORKING RIGHT, RIGHT NOW IT DISPLAYS PRESTON TEMP TO CONSOLE!!!!!!!
-const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+//Idaho Falls
+const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5596475&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
 
         var temp = document.createElement('div');
-        temp = jsObject.list[0].main.temp;
-        console.log(temp);
-        templeCard = document.getElementById('temples');
-        templeCard.appendChild(temp);
+        temper = ~~jsObject.list[0].main.temp;
+        temp.innerHTML = `<p>Current Temperature in Idaho Fall: ${temper}&deg;F<p>`;
+        //console.log(temp);
 
-        //document.getElementById('temples').appendChild = jsObject.list[0].main.temp;
-        //const temp = jsObject.list[0].main.temp;
+        document.querySelector("#tem").appendChild(temp);
+    });
+
+//Rexburg
+const apiURL1 = "http://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+fetch(apiURL1)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+
+        var temp = document.createElement('div');
+        temper = ~~jsObject.list[0].main.temp;
+        temp.innerHTML = `<p>Current Temperature in Rexburg: ${temper}&deg;F<p>`;
+        //console.log(temp);
+
+        document.querySelector("#tem").appendChild(temp);
+    });
+
+//Kansas City
+const apiURL2 = "http://api.openweathermap.org/data/2.5/forecast?id=4393217&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+fetch(apiURL2)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+
+        var temp = document.createElement('div');
+        temper = ~~jsObject.list[0].main.temp;
+        temp.innerHTML = `<p>Current Temperature in Kansas City: ${temper}&deg;F<p>`;
+        //console.log(temp);
+
+        document.querySelector("#tem").appendChild(temp);
+    });
+
+//Oklahoma City
+const apiURL3 = "http://api.openweathermap.org/data/2.5/forecast?id=4544349&appid=edbff4ca4ebeb5d7d5278629c0ac7bb4&units=imperial";
+fetch(apiURL3)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+
+        var temp = document.createElement('div');
+        temper = ~~jsObject.list[0].main.temp;
+        temp.innerHTML = `<p>Current Temperature in Oklahoma City: ${temper}&deg;F<p>`;
+        //console.log(temp);
+
+        document.querySelector("#tem").appendChild(temp);
     });
